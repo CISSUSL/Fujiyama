@@ -16,3 +16,6 @@ cache:
     - node_modules
     - .coala-cache
 
+branches:
+   only:
+   - master
