@@ -1,0 +1,14 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- 6
+script:
+  - npm test
+
+cache:
+    bundler: true
+    directories:
+    - node_modules
+    - .coala-cache
+
