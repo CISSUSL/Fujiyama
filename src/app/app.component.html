@@ -6,3 +6,9 @@
     I'm below on mobile, and to the right on larger devices.
   </div>
 </div>
+
+<button md-button [mdMenuTriggerFor]="menu">Menu</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item>Item 1</button>
+  <button md-menu-item>Item 2</button>
+</md-menu>
