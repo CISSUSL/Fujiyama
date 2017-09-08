@@ -1,0 +1,32 @@
+server:
+  port: 8090
+spring:
+  main:
+    banner-mode: "off"
+  datasource:
+    url: jdbc:mysql://localhost:3306/fujiyama_auth?useSSL=false
+    username: root
+    password: root
+    validation-query: SELECT 1
+    test-on-borrow: true
+  jpa:
+    show_sql: false
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5
+    properties:
+      hibernate:
+        cache:
+          use_second_level_cache: false
+          use_query_cache: false
+        generate_statistics: false
+  data:
+    rest:
+      base-path: /api/
+ 
+#
+#logging:
+#  level:
+#    org.springframework: false
+#    org.hibernate: ERROR
+#  path: logs/prod/
